@@ -8,7 +8,9 @@ const Header = () => {
             display: 'flex', 
             justifyContent: 'space-between', 
             alignItems: 'center',
-            padding: '1rem 2rem'
+            padding: '1rem 2rem',
+            backgroundColor: '#fff',
+            boxShadow: '2px 2px 2px 1px rgb(0 0 0 / 20%)'
             }}>
             <Typography
                 variant="h1"

@@ -1,11 +1,15 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import MainContainer from '../components/MainContainer'
+import MainContainer from '../components/MainContainer';
+import { useStore } from '../store';
 
 const Home: NextPage = () => {
+
+  const isDarkMode = useStore((state) => state.isDarkMode);
+  
   return (
     <div style={{
-      backgroundColor: '#fafafa',
+      backgroundColor: isDarkMode ? '#222e37' : '#fafafa',
       minHeight: '100vh',
       maxHeight: 'fit-content'
     }}>
@@ -19,4 +23,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Home;
